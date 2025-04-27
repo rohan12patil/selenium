@@ -4,7 +4,7 @@ const should = chai.should();
 
 const URL = 'https://lambdatest.github.io/sample-todo-app/';
 
-describe('Add todo Test', function () {
+describe('Add another todo Test', function () {
   it('Should successfully add a TODO', async function () {
     // Launch the Browser
     let driver = await new Builder().forBrowser('chrome').build();

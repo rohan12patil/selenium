@@ -4,7 +4,8 @@
   "description": "https://formy-project.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js  --timeout 10000"
+    "test": "mocha tests/*.js  --timeout 10000",
+    "testParallel": "mocha --parallel tests/*.js --timeout 10000"
   },
   "type": "module",
   "author": "",
