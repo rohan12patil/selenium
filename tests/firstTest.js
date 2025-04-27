@@ -1,33 +1,37 @@
-const { Builder, By, Key } = require('selenium-webdriver');
-const assert = require('assert');
+import { Builder, By, Key } from 'selenium-webdriver';
+import * as chai from 'chai';
+const should = chai.should();
 
 const URL = 'https://lambdatest.github.io/sample-todo-app/';
 
-async function example() {
-  // Launch the Browser
-  let driver = await new Builder().forBrowser('chrome').build();
+describe('Add todo Test', function () {
+  it('Should successfully add a TODO', async function () {
+    // Launch the Browser
+    let driver = await new Builder().forBrowser('chrome').build();
 
-  // Navigate to the app
-  await driver.get(URL);
+    // Navigate to the app
+    await driver.get(URL);
 
-  // add a todo
-  await driver
-    .findElement(By.id('sampletodotext'))
-    .sendKeys('Learn Selenium', Key.RETURN);
+    // add a todo
+    await driver
+      .findElement(By.id('sampletodotext'))
+      .sendKeys('Learn Selenium', Key.RETURN);
 
-  // Assertion
-  let todoText = await driver
-    .findElement(By.xpath('//li[last()]'))
-    .getText()
-    .then(function (value) {
-      return value;
-    });
+    // Assertion
+    let todoText = await driver
+      .findElement(By.xpath('//li[last()]'))
+      .getText()
+      .then(function (value) {
+        return value;
+      });
 
-  // NodeJS Assertion
-  assert.strictEqual(todoText, 'Learn Selenium');
+    todoText.should.equal('Learn Selenium');
 
-  // Close the browser
-  driver.quit();
-}
+    // Close the browser
+    driver.quit();
+  });
 
-example();
+  it('Empty test', function () {
+    console.log('This test is empty');
+  });
+});

@@ -23,8 +23,16 @@ https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascrip
      https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html#//apple_ref/doc/uid/TP40014305-CH11-DontLinkElementID_28
 
 4. Update path as per OS, below is for MacOS
+
    - sudo nano /etc/paths
    - add below [change as per your desired path]
    - /Users/rohan/Documents/dev/browser-drivers
    - CTRL X, Y
    - open new terminal window, echo $PATH then verify your added path
+
+5. Test Framework
+
+   - npm install mocha --save-dev https://mochajs.org/#installation
+
+6. Assertion Library
+   - npm i chai https://www.chaijs.com/
