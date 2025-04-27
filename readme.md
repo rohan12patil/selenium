@@ -1,4 +1,10 @@
+https://lambdatest.github.io/sample-todo-app/
 https://formy-project.herokuapp.com/
+
+Docs
+https://www.selenium.dev/documentation/webdriver/getting_started/first_script/
+
+https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascript/test/hello/helloSelenium.js
 
 1. npm init
 2. Installing selenium webdriver
