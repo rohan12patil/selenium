@@ -32,7 +32,14 @@ https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascrip
 
 5. Test Framework
 
-   - npm install mocha --save-dev https://mochajs.org/#installation
+   - npm install mocha --save-dev
+   - https://mochajs.org/#installation
 
 6. Assertion Library
-   - npm i chai https://www.chaijs.com/
+
+   - npm i chai
+   - https://www.chaijs.com/
+
+7. Reporting Library
+   - npm i mochawesome
+   - https://www.npmjs.com/package/mochawesome

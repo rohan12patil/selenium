@@ -4,14 +4,15 @@
   "description": "https://formy-project.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js  --timeout 10000",
-    "testParallel": "mocha --parallel tests/*.js --timeout 10000"
+    "testS": "mocha tests/*.js  --timeout 10000 --reporter mochawesome",
+    "testP": "mocha tests/*.js --timeout 10000 --parallel --reporter mochawesome  --require mochawesome/register"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^5.2.0",
+    "mochawesome": "^7.1.3",
     "selenium-webdriver": "^4.31.0"
   },
   "devDependencies": {
