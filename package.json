@@ -4,8 +4,10 @@
   "description": "https://formy-project.herokuapp.com/",
   "main": "index.js",
   "scripts": {
+    "test": "mocha tests/*.js --timeout 10000",
     "testS": "mocha tests/*.js  --timeout 10000 --reporter mochawesome",
-    "testP": "mocha tests/*.js --timeout 10000 --parallel --reporter mochawesome  --require mochawesome/register"
+    "testP": "mocha tests/*.js --timeout 10000 --parallel --reporter mochawesome  --require mochawesome/register",
+    "test3": "mocha tests/thirdTest.js --timeout 10000"
   },
   "type": "module",
   "author": "",
