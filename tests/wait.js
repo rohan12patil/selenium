@@ -26,7 +26,7 @@ describe('Wait Test', function () {
     let revealed = await driver.findElement(By.id('revealed'));
     const element = await driver.wait(until.elementIsVisible(revealed), 2000);
 
-    await driver.wait(until.elementIsVisible(element), 10000);
+    await driver.wait(until.elementIsVisible(element), 1000);
     await element.sendKeys('Explicit Wait Hi World');
   });
 });

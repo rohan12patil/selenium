@@ -1,5 +1,6 @@
-https://lambdatest.github.io/sample-todo-app/
-https://formy-project.herokuapp.com/
+Pracitce list of all web pages
+
+- https://www.selenium.dev/selenium/web/
 
 Docs
 https://www.selenium.dev/documentation/webdriver/getting_started/first_script/
